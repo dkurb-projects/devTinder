@@ -9,3 +9,7 @@
 - Whar are dependencies?
 - Difference between ^ and ~
 - What is the use of "-g" while npm install
+
+- Initi git repo
+- Ordering of urls - /hello, /, /hello/2
+- write logic to handle GET, PUT, PATCH, DELETE API calls

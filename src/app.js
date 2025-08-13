@@ -5,6 +5,10 @@ const app = express();
 
 app.use('/test', (request, response) => {
     response.send('<h1>Hello from the server test!</h1>');
+});
+
+app.get('/test', (req, res) => {
+    res.send('get request');
 })
 
 app.use('/', (request, response) => {
