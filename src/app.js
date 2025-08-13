@@ -3,7 +3,9 @@ const express = require('express');
 const app = express();
 
 
-app.use('/test', (request, response) => {
+app.use('/test/:id/:words', (request, response) => {
+    //console.log(request.query);
+    console.log(request.params);
     response.send('<h1>Hello from the server test!</h1>');
 });
 

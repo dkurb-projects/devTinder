@@ -13,3 +13,6 @@
 - Initi git repo
 - Ordering of urls - /hello, /, /hello/2
 - write logic to handle GET, PUT, PATCH, DELETE API calls
+- use of regex in urls
+- read query string
+- read query params
