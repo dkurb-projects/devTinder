@@ -16,3 +16,6 @@
 - use of regex in urls
 - read query string
 - read query params
+
+- Multiple route handler
+- next() function and error along with res.send
