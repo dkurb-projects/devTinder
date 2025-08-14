@@ -17,9 +17,10 @@ app.get('/user', (req, res, next) => {
     next();
     console.log('1st send');
     res.send('get request');
-}, (req, res) => {
+}, (req, res, next) => {
     console.log('2nd send');
-    res.send('get 2nd request');
+    //res.send('get 2nd request');
+    next();
 })
 
 app.use('/', (request, response) => {
