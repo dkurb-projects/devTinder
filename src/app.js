@@ -11,6 +11,15 @@ app.use('/test/:id/:words', (request, response) => {
 
 app.get('/test', (req, res) => {
     res.send('get request');
+});
+
+app.get('/user', (req, res, next) => {
+    next();
+    console.log('1st send');
+    res.send('get request');
+}, (req, res) => {
+    console.log('2nd send');
+    res.send('get 2nd request');
 })
 
 app.use('/', (request, response) => {
