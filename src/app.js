@@ -1,31 +1,29 @@
 const express = require('express');
+require("./config/database");
 
 const app = express();
+const User = require("./models/user");
 
+app.post('/signup', async (req, res) => {
+    const userObj = {
+        firstName: "Disha",
+        lastName: "Vaghela",
+        emailId: "ddd@gmail.com",
+        password: "ddd@123"
+    }
+    const user = new User(userObj);
 
-app.use('/test/:id/:words', (request, response) => {
-    //console.log(request.query);
-    console.log(request.params);
-    response.send('<h1>Hello from the server test!</h1>');
+    try {
+        await user.save();
+        res.send('User added successfully.')
+    } catch(e) {
+        res.status(400).send('Error saving user - ' + e.message);
+    }
 });
 
-app.get('/test', (req, res) => {
-    res.send('get request');
-});
-
-app.get('/user', (req, res, next) => {
-    next();
-    console.log('1st send');
-    res.send('get request');
-}, (req, res, next) => {
-    console.log('2nd send');
-    //res.send('get 2nd request');
-    next();
+app.get('/', (req, res) => {
+    res.send('this is it!');
 })
-
-app.use('/', (request, response) => {
-    response.send('<h1>Hello from the server!</h1>');
-});
 
 app.listen(3000, () => {
     console.log('hi');

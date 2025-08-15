@@ -19,3 +19,15 @@
 
 - Multiple route handler
 - next() function and error along with res.send
+- app.use("/route", r1, r2, r3, r4, r5)
+- What is middleware?
+- How express js handles the request?
+- Error handling using app.js
+
+- Create free cluster in atlas mongo db live
+- Install mongoose library
+- Connect database
+- call the connectDB function
+- create a user schema and user model
+- create POST /signup API to add data to database
+- error handling using try..catch
