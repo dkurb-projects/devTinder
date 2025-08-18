@@ -42,3 +42,9 @@
 - create a delete user API
 - create an update user API
 - explore mongoose documentation for Model APIs for options
+
+- Explore schemaTypes options from mongoose documentation
+- Add a required, unique, lowercase, uppercase, min/max, trim, default, arrays
+- Custom validate function for gender
+- Improve schema - put all appropriate validations on each field in schema
+- Add timestamps to user schema

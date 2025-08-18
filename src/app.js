@@ -64,7 +64,7 @@ app.delete('/user', async (req,res) => {
 app.patch('/user', async (req, res) => {
     const userData = req.body;
     try {
-        const user = await User.findOneAndUpdate({emailId: userData.emailId}, userData, {returnDocument: 'after'});
+        const user = await User.findOneAndUpdate({emailId: userData.emailId}, userData, {returnDocument: 'after', runValidators: true});
         if(!user) {
             res.status(404).send('No user found');
         } else {
