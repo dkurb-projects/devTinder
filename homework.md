@@ -35,4 +35,10 @@
 - difference between json and javascript object
 - add express.json() middleware to your app
 - make your signup API dynamic to receive data from postman
-- 
+- User.findOne
+- API - get user by email
+- API - get all users
+- API - get user by id
+- create a delete user API
+- create an update user API
+- explore mongoose documentation for Model APIs for options
