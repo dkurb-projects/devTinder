@@ -48,3 +48,7 @@
 - Custom validate function for gender
 - Improve schema - put all appropriate validations on each field in schema
 - Add timestamps to user schema
+- API level validations on patch request and signup
+- Data sanitizing - Add API validation for each field
+- Install validtor library
+- explore validator functions - password, url, email address etc
