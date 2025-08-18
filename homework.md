@@ -52,3 +52,4 @@
 - Data sanitizing - Add API validation for each field
 - Install validtor library
 - explore validator functions - password, url, email address etc
+- NEVER TRUST req.body
