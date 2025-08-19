@@ -57,3 +57,4 @@
 - validate data in signup API
 - install bcrypt library
 - create a password hash using bcrypt.hash & save user with encrypted password
+- login API with user emailid check and compare password encrypt
