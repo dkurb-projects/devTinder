@@ -1,13 +1,31 @@
-const adminAuth = (req, resp, next) => {
-    let token = '123456';
-    let isAuthorized = token == '123456s';
-    if(isAuthorized) {
-        resp.status(200).send('Authorized');
-    } else {
-        resp.status(401).send('Unauthorized');
+const jwt = require("jsonwebtoken");
+const User = require("../models/user");
+
+const userAuth = async (req, resp, next) => {
+    try {
+        const {token} = req.cookies;
+        if(!token) {
+            throw new Error('Invalid token');
+        }
+
+         const decodedToken = await jwt.verify(token, "DEV@TINDER$11");
+        
+         const {_id} = decodedToken;
+        
+         const user = await User.findById(_id);
+        
+        if(!user) {
+            throw new Error("User not found");
+        }
+        
+        req.user = user;
+        //req.user = {id: 1234};
+        next();
+    } catch(e) {
+        throw new Error('error - ' + e.message);
     }
 };
 
 module.exports = {
-    adminAuth
+    userAuth
 }

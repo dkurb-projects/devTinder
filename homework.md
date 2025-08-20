@@ -58,3 +58,15 @@
 - install bcrypt library
 - create a password hash using bcrypt.hash & save user with encrypted password
 - login API with user emailid check and compare password encrypt
+
+- send dummy cookie to user
+- create /profile API and check if you get cookie back
+- to read a cookie install - npm i cookie-parser
+- npm i jsonwebtoken
+- In /login API, after email and password validation, create a JWT token and send it to user
+- read cookies inside /profile API and find logged in user
+- userAuth middleware
+- Add userAuth middleware in /profile API
+- Test expiry of jwt token and cookies
+- create schema method for jwt token
+- create schema method for compare password in /login API
