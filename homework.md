@@ -70,3 +70,11 @@
 - Test expiry of jwt token and cookies
 - create schema method for jwt token
 - create schema method for compare password in /login API
+
+- Explore Tinder API
+- Create list of all APIs you can think of on Tinder
+- Group multiple routes under respective routers
+- Read documentation for express.router
+- create routes folder for managing auth, profile, request routers
+- create routers - authRouter, profileRouter, requestRouter
+- Import these routers in  app.js
