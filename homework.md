@@ -81,3 +81,14 @@
 - create POST /logout API
 - create PATCH /profile/edit
 - create PATCH  /profile/password - forgot password API
+- Make you validate all data in POST, PATCH APIs
+
+- Read article on index - https://www.mongodb.com/docs/manual/core/indexes/index-types/index-compound/
+- Read about indexes in MongoDB
+- Why do we need indexes?
+- create connectionRequest Schema
+- add proper validation in schema
+- API validations for connection request
+- Think about ALL corner cases
+- $or query in MongoDB, and rest queries too
+- Schema.pre("save", function () {})
