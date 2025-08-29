@@ -92,3 +92,7 @@
 - Think about ALL corner cases
 - $or query in MongoDB, and rest queries too
 - Schema.pre("save", function () {})
+
+- Write an API for /request/review/:status/:requestId
+- Thought process by GET vs POST
+- 
