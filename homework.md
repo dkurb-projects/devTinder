@@ -95,4 +95,8 @@
 
 - Write an API for /request/review/:status/:requestId
 - Thought process by GET vs POST
+
+- logic for GET /user/feed API
+- explore $and, $nin mongose query operators
+- pagination
 - 
